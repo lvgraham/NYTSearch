@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT Article Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid header">
+            <div class="container">
+                <h1 class="display-4">New York Times Search</h1>
+            </div>
+        </div>
+
+    
+        <form>
+            <div class="form-group">
+                <label for="searchTerm">Search Term:</label>
+                <input type="text" class="form-control" id="searchTerm" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="numOfArticles">Number of Records to Retrieve</label>
+                <select class="form-control" id="numOfArticles">
+                <option>1</option>
+                <option>5</option>
+                <option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="startYear">Start Year (Optional)</label>
+                <textarea class="form-control" id="startYear" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="endYear">End Year (Optional)</label>
+                <textarea class="form-control" id="endYear" rows="3"></textarea>
+            </div>
+        </form>
+
+        <button class="btn btn-primary" type="submit" id="searchBtn">Search</button>
+        <button class="btn btn-primary" type="submit" id="clearBtn">Clear Results</button>
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="NYTapp.js"></script>
+</body>
+</html>
