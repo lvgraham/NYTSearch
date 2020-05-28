@@ -3,7 +3,7 @@ let numOfArticles = 0;
 let startYear = 0;
 let endYear = 0;
 
-$("button").on("click", function () {
+$("#searchBtn").on("click", function () {
   let queryURL =
     "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" +
     query +
